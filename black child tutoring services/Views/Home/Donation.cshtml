@@ -1,0 +1,50 @@
+﻿@model black_child_tutoring_services.Models.Donation
+@{
+    ViewBag.Title = "Donate to Black Child Tutoring Services";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Donate to Black Child Tutoring Services</h2>
+
+<p>Thank you for supporting our mission to provide quality tutoring services to Black children. Your generous donation will make a positive impact on their education.</p>
+
+<body>
+
+    <h2>Donation Form</h2>
+
+   
+    <form asp-controller="Home" asp-action="Donation" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="form-group">
+            <label asp-for="Amount"></label>
+            <input asp-for="Amount" class="form-control" />
+            <span asp-validation-for="Amount" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="FullName"></label>
+            <input asp-for="FullName" class="form-control" />
+            <span asp-validation-for="FullName" class="text-danger"></span>
+        </div>
+
+
+        <div class="form-group">
+            <label asp-for="Email"></label>
+            <input asp-for="Email" type="email" class="form-control" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+
+
+        <div>
+        <label asp-for="Message">Message:</label>
+        <input asp-for="Message" type="Message" class="form-control" />
+            <span asp-validation-for="Message" name="message" rows="4"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Donate</button>
+    </form>
+
+    <!-- Add any additional scripts here -->
+
+</body>

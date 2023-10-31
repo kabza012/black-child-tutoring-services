@@ -1,0 +1,8 @@
+﻿body {
+  
+    background-image: url('/Images/G72BCO.jpg'); /* Adjust the path based on your project structure */
+    background-size: cover; /* Adjust as needed */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Ensures the background image stays fixed */
+
+}

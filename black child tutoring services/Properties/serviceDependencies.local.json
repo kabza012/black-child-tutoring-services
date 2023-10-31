@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "secrets1": {
+      "type": "secrets.user"
+    },
+    "mssql1": {
+      "secretStore": "LocalSecretsFile",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/st10102523/databases/DjPromoWebsite",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:Server=tcp:st10102523.database.windows.net,1433;InitialCatalog=DjPromoWebsite;PersistSecurityInfo=False;UserID=admin1;Password=kabzaNeo1825;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;ConnectionTimeout=30;",
+      "dynamicId": null
+    }
+  }
+}
